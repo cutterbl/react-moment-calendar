@@ -1,0 +1,50 @@
+@import '../../shared/shared';
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.label {
+  color: $cal-link-color;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.list {
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  box-shadow: -1px 2px 2px 0px rgba(150,148,148,0.75);
+  margin: 0;
+  padding: 5px;
+  top: 1em;
+  width: auto;
+  z-index: 10;
+  > li {
+    margin:0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.standard {
+  color: black;
+}
+
+.highlighted {
+  background-color: $cal-light-color;
+}
+
+.selected {
+  background-color: $cal-core-color;
+  color: white;
+  font-weight: 600;
+}

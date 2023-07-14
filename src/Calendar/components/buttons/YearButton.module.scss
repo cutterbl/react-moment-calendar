@@ -1,0 +1,17 @@
+@import '../../shared/shared';
+
+.button {
+  @extend .buttonReset;
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  color: $cal-link-color;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.activeDate {
+  font-weight: 600;
+}

@@ -1,0 +1,22 @@
+@import '../../shared/shared';
+
+.button {
+  @extend .buttonReset;
+  cursor: pointer;
+  border-radius: 50%;
+  font-weight: 600;
+  @extend .baseHighlight;
+}
+
+.selected {
+  @extend .active;
+}
+
+.disabled {
+  color: #a8a8a8;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: not-allowed;
+}

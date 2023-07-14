@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 2px;
+  padding: 10px;
+  box-shadow: -1px 2px 2px 0px rgba(150,148,148,0.75);
+  display: grid;
+  grid-template-columns: 1fr;
+  //grid-template-rows: auto 1fr;
+  gap: 0.5em;
+}
+
+.day {
+  grid-template-rows: auto auto 1fr;
+}
+
+.year {
+  grid-template-rows: auto 1fr;
+}

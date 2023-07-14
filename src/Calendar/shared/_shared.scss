@@ -1,0 +1,36 @@
+$cal-core-color: #2154AD;
+$cal-light-color: #E5ECF6;
+$cal-link-color: #069;
+
+.buttonReset {
+  background-color: transparent;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.baseHighlight {
+  border: 1px solid $cal-light-color;
+  background-color: $cal-light-color;
+  color: $cal-core-color;
+  &:hover {
+    border-color: $cal-core-color;
+  }
+}
+
+.active {
+  border: 1px solid $cal-core-color;
+  background-color: $cal-core-color;
+  color: white;
+}

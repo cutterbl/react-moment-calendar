@@ -1,0 +1,22 @@
+@import '../shared/shared';
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  @extend .buttonReset;
+  font-weight: 600;
+}
+
+.navButton {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: $cal-link-color;
+  border-radius: 2px;
+  &:hover {
+    background-color: $cal-link-color;
+    color: $cal-light-color;
+  }
+}
